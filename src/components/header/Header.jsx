@@ -6,13 +6,14 @@ import employeesHeaderImg from "../../assets/headers/employeesHeader.jpg";
 import exerciseDetailsHeaderImg from "../../assets/headers/exerciseDetailsHeader.png";
 import loginHeaderImg from "../../assets/headers/loginHeader.png";
 import myPageHeaderImg from "../../assets/headers/myPageHeader.png";
+import Button from "../button/Button";
 
 const IMAGES_MAP = {
     "/": homeHeaderImg,
     "/about": aboutHeaderImg,
   };
 
-const Header = ({ title, leadText }) => {
+const Header = ({ title, leadText, buttonText, onClick, buttonIcon }) => {
 
     const location = useLocation();
     const currentBg = IMAGES_MAP[location.pathname];
@@ -25,6 +26,10 @@ const Header = ({ title, leadText }) => {
       <div className={styles.headerContent}>
         {title && <h1 className={styles.title}>{title}</h1>}
         {leadText && <p className={styles.leadText}>{leadText}</p>}
+        {buttonText && onClick && 
+        <Button buttonText={buttonText} onClick={onClick}
+        icon={buttonIcon}>
+        </Button>}
       </div>
     </header>
   );

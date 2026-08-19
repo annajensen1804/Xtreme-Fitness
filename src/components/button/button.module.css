@@ -1,0 +1,22 @@
+.button {
+  background-color: #00000000;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: 2em;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px
+}
+
+.button p {
+color: white;
+font-size: 12px;
+}
+
+.icon {
+  width: 18px;   
+  height: 18px;  
+  object-fit: contain; 
+}

@@ -1,10 +1,9 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 /* import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "../footer/Footer";
  */
-
 import Navigation from "../navigation/Navigation";
+import Footer from "../footer/Footer";
 
 /* Hele projektet: #root --> .app --> .main --> <Outlet />
    <Outlet /> renderer alle vores Route-elementer (defineret i Routes.jsx).
@@ -12,13 +11,15 @@ import Navigation from "../navigation/Navigation";
    <ToastContainer /> er 'beholderen' til de toast-beskeder, vi viser med toast(). */
 const AppLayout = () => {
   return (
-    <div className='app'>
+    <div className="app">
       <Navigation />
-      <div className='main'>
+      <div className="main">
         <Outlet />
         <ScrollRestoration />
       </div>
-      {/* <Footer />
+      <Footer />
+
+      {/* 
       <ToastContainer
         position='bottom-center'
         autoClose={3000}

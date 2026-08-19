@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2, 
+h3 {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 4%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}

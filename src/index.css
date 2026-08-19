@@ -20,6 +20,7 @@ h3 {
   font-family: "Teko", sans-serif;
   text-align: center;
   color: white;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -40,8 +41,3 @@ h1 {
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-}

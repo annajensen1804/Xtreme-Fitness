@@ -1,9 +1,11 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 /* import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navigation from "../navigation/Navigation";
 import Footer from "../footer/Footer";
  */
+
+import Navigation from "../navigation/Navigation";
+
 /* Hele projektet: #root --> .app --> .main --> <Outlet />
    <Outlet /> renderer alle vores Route-elementer (defineret i Routes.jsx).
    <ScrollRestoration /> sørger for, at siderne starter øverst ved navigation.
@@ -11,7 +13,7 @@ import Footer from "../footer/Footer";
 const AppLayout = () => {
   return (
     <div className='app'>
-      {/* <Navigation /> */}
+      <Navigation />
       <div className='main'>
         <Outlet />
         <ScrollRestoration />

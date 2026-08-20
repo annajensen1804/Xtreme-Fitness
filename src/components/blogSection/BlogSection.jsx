@@ -14,7 +14,7 @@ const BlogSection = ({ post }) => {
     };
 
     return (
-      <section className={styles.blogContainer}>
+      <section className="sectionsContainer">
         <p className="kicker">VORES NYHEDER</p>
         <h2 className="black">SENESTE BLOGINDLÆG</h2>
         <img className={styles.blogImage} src={post.image} alt={post.title} />

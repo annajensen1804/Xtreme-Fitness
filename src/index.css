@@ -23,9 +23,19 @@ h3 {
   text-transform: uppercase;
 }
 
+.black {
+    color: black;
+  }
+
 h1 {
     font-weight: 700;
     letter-spacing: 4%;
+}
+
+.kicker {
+  font-family: "Teko", sans-serif;
+  color: #E54E41;
+  font-size: 15px;
 }
 
 .app {

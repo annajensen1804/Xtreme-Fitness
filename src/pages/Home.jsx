@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Header from "../components/header/Header";
 import Button from "../components/button/Button";
 import videoIcon from "../assets/icons/video_img_orange.png";
+import Exercises from "../components/exercises/Exercises";
 import BlogSection from "../components/blogSection/BlogSection";
 
 const Home = () => {
@@ -23,7 +24,9 @@ const Home = () => {
         buttonIcon={videoIcon}
       />
 
-      <Suspense fallback={<div className="skeleton">Henter blogindlæg...</div>}>
+      <Exercises exercises={exercises} />
+
+      <Suspense fallback={<div>Henter blogindlæg...</div>}>
         <Await
           resolve={blogs}
           errorElement={<div>Kunne ikke hente bloggen</div>}
@@ -34,8 +37,8 @@ const Home = () => {
             }
             const latestPost = resolvedBlogs[resolvedBlogs.length - 1];
 
-            return <BlogSection post={latestPost} />
-          }} 
+            return <BlogSection post={latestPost} />;
+          }}
         </Await>
       </Suspense>
     </article>

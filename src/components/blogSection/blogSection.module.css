@@ -1,0 +1,42 @@
+.blogContainer {
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.blogImage {
+    width: 90%;
+}
+
+.blogDate {
+    background: url(../../assets/headers/section_background.png) no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: -50px;
+}
+
+.teaser {
+    color: #777777;
+    font-size: 12px;
+    padding: 0 40px;
+}
+
+.readMore {
+    color: #E54E41;
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.readMore:hover {
+    color: #ff4500;
+}

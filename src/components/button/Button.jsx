@@ -13,7 +13,7 @@ const Button = ({
       onClick={onClick}
       type={type}
     >
-      <p>{buttonText}</p>
+      <span>{buttonText}</span>
       {icon && <img src={icon} alt="" className={styles.icon} />}
     </button>
   );

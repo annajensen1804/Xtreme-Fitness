@@ -32,3 +32,7 @@ export const homeLoader = async () => {
     blogs: blogsPromise,
   };
 }
+
+export const backofficeLoader = async () => {
+    return getData("/blogs")
+}

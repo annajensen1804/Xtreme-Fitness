@@ -6,7 +6,9 @@ import {
 import AppLayout from "./components/layouts/AppLayout";
 import ErrorElement from "./components/feedbackElements/ErrorElement"
 import Home from "./pages/Home"
-import { homeLoader } from "./components/loaders/DataLoader";
+import { backofficeLoader, homeLoader } from "./components/loaders/DataLoader";
+import Backoffice from "./pages/backoffice/Backoffice";
+import Login from "./pages/login/Login";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +21,15 @@ const routes = createBrowserRouter(
           errorElement={<ErrorElement />}
         />
       </Route>
+
+      <Route path="login" element={<Login />} />
+
+      <Route
+        path="backoffice"
+        element={<Backoffice />}
+        loader={backofficeLoader}
+        errorElement={<ErrorElement />}
+      />
     </Route>,
   ),
 );

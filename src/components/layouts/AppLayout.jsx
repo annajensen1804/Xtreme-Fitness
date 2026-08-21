@@ -1,7 +1,7 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
-/* import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
- */
+
 import Navigation from "../navigation/Navigation";
 import Footer from "../footer/Footer";
 
@@ -19,7 +19,7 @@ const AppLayout = () => {
       </div>
       <Footer />
 
-      {/* 
+      
       <ToastContainer
         position='bottom-center'
         autoClose={3000}
@@ -28,8 +28,8 @@ const AppLayout = () => {
         closeOnClick
         pauseOnHover
         draggable
-        theme='light'
-      /> */}
+        theme='dark'
+      />
     </div>
   );
 };

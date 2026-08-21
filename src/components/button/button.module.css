@@ -20,3 +20,20 @@ font-size: 12px;
   height: 18px;  
   object-fit: contain; 
 }
+
+.red {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.gray {
+  background-color: #3b3939;
+  color: white;
+}
+
+.big {
+  width: 300px;
+  background-color: #943412;
+  padding: 10px 20px;
+  color: white;
+}

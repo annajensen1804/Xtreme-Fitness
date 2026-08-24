@@ -5,6 +5,7 @@ import Button from "../components/button/Button";
 import videoIcon from "../assets/icons/video_img_orange.png";
 import Exercises from "../components/exercises/Exercises";
 import BlogSection from "../components/blogSection/BlogSection";
+import About from "../components/about/About";
 
 const Home = () => {
   const { exercises, services, reviews, subscriptions, employees, blogs } = useLoaderData();
@@ -12,6 +13,9 @@ const Home = () => {
   const navigate = useNavigate();
   const handleLoginRedirect = () => {
     navigate("/login");
+  };
+  const handleAboutRedirect = () => {
+    navigate("/about");
   };
 
   return (
@@ -41,6 +45,13 @@ const Home = () => {
           }}
         </Await>
       </Suspense>
+
+      <About
+        variant="dark"
+        buttonText="Læs mere"
+        onClick={handleAboutRedirect}
+        buttonIcon={videoIcon}
+      />
     </article>
   );
 };

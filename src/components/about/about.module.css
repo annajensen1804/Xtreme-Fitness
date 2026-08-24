@@ -1,0 +1,53 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+  text-align: start;
+}
+
+img {
+  width: 200px;
+}
+
+/* variant = "dark" */
+.dark {
+  background: url("../../assets/images/about_us_background.jpg");
+  background-position: bottom right;
+  color: #ffffff;
+}
+.dark h2 { 
+  color: #ffffff; 
+}
+
+.cardNumber {
+  color: #E54E41;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* variant = "light" */
+.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+.light h2 { color: #000000; }
+
+/* variant = "color" */
+.color {
+  background-color: #f8f9fa; /* Верх светлый */
+  color: #333333;
+}
+.color h2 { color: #000000; }
+
+.color .cardContainer {
+  background: url("../../assets/headers/section_background.png");
+  padding: 20px;
+}
+.color .card {
+  color: #ffffff;
+}

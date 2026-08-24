@@ -1,9 +1,11 @@
 .cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+
 }
 
 .card {
@@ -20,6 +22,7 @@ img {
   background-position: bottom right;
   color: #ffffff;
 }
+
 .dark h2 { 
   color: #ffffff; 
 }
@@ -34,20 +37,31 @@ img {
 .light {
   background-color: #ffffff;
   color: #333333;
+  width: 100vw;
 }
+
 .light h2 { color: #000000; }
 
-/* variant = "color" */
-.color {
-  background-color: #f8f9fa; /* Верх светлый */
-  color: #333333;
-}
-.color h2 { color: #000000; }
-
-.color .cardContainer {
+.light .cardContainer {
   background: url("../../assets/headers/section_background.png");
-  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
-.color .card {
+
+.light .card p {
   color: #ffffff;
+}
+
+.videoImg {
+
+z-index: 5;
+width: 250px;
+position: relative;
+top: -80px;
+left: 0;
 }

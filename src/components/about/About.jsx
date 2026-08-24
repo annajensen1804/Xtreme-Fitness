@@ -2,11 +2,18 @@ import styles from './about.module.css'
 import Button from "../button/Button"
 import aboutUsImg from "../../assets/images/about_us2.png"
 
-const About = ({ buttonText, onClick, buttonIcon, variant = 'dark' }) => {
-    const componentClass = `sectionsContainer ${styles[variant]}`;
-    
+
+const About = ({
+buttonText = null,
+  onClick,
+  buttonIcon,
+  variant = "dark",
+  videoImg = null,
+}) => {
+  const componentClass = `sectionsContainer ${styles[variant]}`;
+
   return (
-    <article className={componentClass}>
+    <section className={componentClass}>
       <img src={aboutUsImg} alt="" />
       <p className="kicker">Om os</p>
       <h2>VELKOMMEN TIL XTREME FITNESS</h2>
@@ -33,12 +40,21 @@ const About = ({ buttonText, onClick, buttonIcon, variant = 'dark' }) => {
           <p className={styles.cardText}>SUNDERE KROPPE</p>
         </div>
       </div>
-      <Button
+      {videoImg && (
+        <img
+          src={videoImg}
+          alt="Video preview"
+          className={styles.videoImg}
+        ></img>
+      )}
+      {buttonText && (
+        <Button
         buttonText={buttonText}
         onClick={onClick}
         icon={buttonIcon}
       ></Button>
-    </article>
+      )}
+    </section>
   );
 };
 

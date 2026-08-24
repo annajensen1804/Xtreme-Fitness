@@ -13,6 +13,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     overflow-x: hidden;
+    font-size: 14px;
 }
 
 h1,
@@ -39,6 +40,7 @@ h1 {
   color: #E54E41;
   font-size: 15px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .app {

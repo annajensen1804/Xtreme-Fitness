@@ -22,8 +22,7 @@ const routes = createBrowserRouter(
           errorElement={<ErrorElement />}
         />
 
-        <Route path="about" element={<AboutUs />} />
-        
+        <Route path="about" element={<AboutUs />} loader={homeLoader} />
       </Route>
 
       <Route path="login" element={<Login />} />

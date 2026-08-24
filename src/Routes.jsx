@@ -9,6 +9,7 @@ import Home from "./pages/Home"
 import { backofficeLoader, homeLoader } from "./components/loaders/DataLoader";
 import Backoffice from "./pages/backoffice/Backoffice";
 import Login from "./pages/login/Login";
+import AboutUs from "./pages/AboutUs";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,9 @@ const routes = createBrowserRouter(
           loader={homeLoader}
           errorElement={<ErrorElement />}
         />
+
+        <Route path="about" element={<AboutUs />} />
+        
       </Route>
 
       <Route path="login" element={<Login />} />
